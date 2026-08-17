@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/binary-subarrays-with-sum/
 #include "bits/stdc++.h"
 using namespace std;
 int main() {

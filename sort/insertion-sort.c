@@ -20,6 +20,7 @@ int main() {
 
     int s[6] = { 1,2,3,4 ,5,6 };
     int a;
+    int n = 6;
 
     insertionSort(s, n);
     for (int i = 0; i < n; i++) printf("%d ", s[i]);

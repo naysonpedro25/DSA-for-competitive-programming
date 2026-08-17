@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
+#include <functional>
 #include <map>
+#include <queue>
 #include <utility>
 #include <vector>
 
-// https://cses.fi/problemset/task/1660
+// https://cses.fi/F/task/1660
 // https://cses.fi/problemset/task/1661
 
 #define LL long long
@@ -34,6 +36,7 @@ int main() {
 
     mp[mod]++;
   }
+  
 
   cout << res;
 
