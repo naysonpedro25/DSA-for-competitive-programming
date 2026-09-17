@@ -6,9 +6,9 @@ using namespace std;
 vector<vector<int>> adj;
 bool v[1000010];
 
-int dfs(int node) {
+void dfs(int node) {
   v[node] = 1;
-  int lest = -1;
+  // int lest = -1;
 
   for (int i : adj[node]) {
     if (!v[i]) {
@@ -16,7 +16,7 @@ int dfs(int node) {
     }
   }
 
-  return lest;
+  // return lest;
 }
 
 int main() {

@@ -5,7 +5,7 @@ vector<vector<char>> mt;
 bool v[1001][1001];
 int dI[4] = {1, -1, 0, 0}, dJ[4] = {0, 0, 1, -1};
 
-void dfs(int ni, int nj, int n, int m) {
+void bfs(int ni, int nj, int n, int m) {
   queue<pair<int, int>> q;
   q.push({ni, nj});
   v[ni][nj] = 1;
@@ -42,7 +42,7 @@ int main() {
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       if (mt[i][j] == '.' && !v[i][j]) {
-        dfs(i, j, n, m);
+        bfs(i, j, n, m);
         res++;
       }
     }

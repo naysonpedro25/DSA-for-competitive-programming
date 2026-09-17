@@ -8,7 +8,7 @@ int t[MAXN][MAXN];
 // https://neps.academy/br/exercise/567
 int dI[4] = {1, -1, 0, 0}, dJ[4] = {0, 0, 1, -1};
 
-void dfs(int i, int j, int maxI, int maxJ) {
+void bfs(int i, int j, int maxI, int maxJ) {
   for (int k = 0; k < 4; k++) {
     int vI = i + dI[k];
     int vJ = j + dJ[k];
@@ -16,7 +16,7 @@ void dfs(int i, int j, int maxI, int maxJ) {
     if (vI >= 0 && vI < maxI && vJ >= 0 && vJ < maxJ) {
       if (!visited[vI][vJ] && t[vI][vJ] == 1) {
         visited[vI][vJ] = 1;
-        dfs(vI, vJ, maxI, maxJ);
+        bfs(vI, vJ, maxI, maxJ);
       }
     }
   }
@@ -35,7 +35,7 @@ int main() {
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       if (!visited[i][j] && t[i][j] == 1) {
-        dfs(i, j, n, m);
+        bfs(i, j, n, m);
         count++;
       }
     }

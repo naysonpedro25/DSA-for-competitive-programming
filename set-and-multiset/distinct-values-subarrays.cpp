@@ -30,12 +30,3 @@ int main() {
   return 0;
 }
 
-/*
-HTTP client/server em Java
-connection pooling
-timeouts
-keep-alive
-blocking vs non-blocking I/O
-threads / thread pools
-concorrência
-*/

@@ -2,7 +2,9 @@
 #include <bits/stdc++.h>
 #include <vector>
 using namespace std;
+
 // https://codeforces.com/contest/1808/problem/B
+
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);

@@ -7,7 +7,7 @@ vector<vector<int>> adj;
 bool mark[50000];
 void dfs(int n) {
 
-  mark[n] = 1;
+  mark[n] = true;
   stack<int> s;
   s.push(n);
 

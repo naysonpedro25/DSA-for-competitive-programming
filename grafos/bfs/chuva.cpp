@@ -6,7 +6,7 @@ const int MAXN = 1010;
 bool visited[MAXN][MAXN];
 char t[MAXN][MAXN];
 
-void dfs(int I, int J, int maxI, int maxJ) {
+void bfs(int I, int J, int maxI, int maxJ) {
 
   queue<pair<int, int>> q;
   q.push({I, J});
@@ -47,7 +47,7 @@ int main() {
     }
   }
 
-  dfs(oi, oj, n, m);
+  bfs(oi, oj, n, m);
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       cout << t[i][j];

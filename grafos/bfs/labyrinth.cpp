@@ -27,7 +27,7 @@ char pathLetter(int x, int y) {
   }
 }
 
-bool dfs(int x, int y, int n, int m) {
+bool bfs(int x, int y, int n, int m) {
   vis[x][y] = 1;
 
   queue<pair<int, int>> q;
@@ -85,7 +85,7 @@ int main() {
     }
   }
 
-  int isValid = dfs(iniI, iniJ, n, m);
+  int isValid = bfs(iniI, iniJ, n, m);
 
   cout << (isValid ? "YES" : "NO") << '\n';
   if (isValid) {
